@@ -11,16 +11,16 @@ module HueExporter
       }
     )
 
-    def self.load(config_path = default_config_path)
-      create_default_config(config_path) unless File.exists?(config_path)
+    def self.load
+      create_default_config unless File.exists?(config_path)
       from_yaml(File.read(config_path))
     end
 
-    def self.default_config_path
+    def self.config_path
       File.expand_path("~/#{CONFIG_FILE_NAME}")
     end
 
-    private def self.create_default_config(config_path)
+    private def self.create_default_config
       puts "Creating empty config at #{config_path.inspect}"
       File.open(config_path, "w") do |f|
         YAML.build(f) do |yaml|
@@ -36,6 +36,13 @@ module HueExporter
 
     def valid?
       username != UNSET_STRING
+    end
+
+    def persist
+      puts "Persisting config at #{self.class.config_path.inspect}"
+      File.open(self.class.config_path, "w") do |f|
+        YAML.dump(self, f)
+      end
     end
   end
 end
