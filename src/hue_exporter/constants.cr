@@ -4,4 +4,6 @@ module HueExporter
   CONFIG_FILE_NAME = ".hue_exporterrc"
 
   UNSET_STRING = "<unset>"
+
+  HTTP_PORT = 9369
 end

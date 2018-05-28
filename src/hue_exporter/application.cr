@@ -1,3 +1,6 @@
+require "kemal"
+require "./web"
+
 module HueExporter
   class Application
     private property config : HueExporter::Configuration
@@ -9,10 +12,13 @@ module HueExporter
     end
 
     def run
+      puts "hue_exporter #{VERSION}"
       unless config.valid?
         puts "Starting first time setup.  This has to be done only once!"
         setup_flow
       end
+      puts "Starting web server on port #{HTTP_PORT}..."
+      Kemal.run HTTP_PORT
     end
 
     private def setup_flow
