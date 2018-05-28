@@ -11,6 +11,16 @@ module HueExporter
       @config = config
     end
 
+    def sensors
+      response = JSON.parse(get("/api/#{config.username}/sensors").body)
+
+      if (first_hash = response.first.as_h?) && first_hash["error"]?
+        return {false, response.first["error"]["type"].as_i}
+      end
+
+      return {true, response}
+    end
+
     # Authorize with the Hue bridge
     def authorize
       return {true, :already_authorized} unless config.username == UNSET_STRING
@@ -35,6 +45,10 @@ module HueExporter
       @headers ||= HTTP::Headers.new.tap do |headers|
         headers["Content-Type"] = "application/json"
       end
+    end
+
+    private def get(endpoint)
+      HTTP::Client.get(File.join(config.hue_url, endpoint), headers)
     end
 
     private def post(endpoint, body : Hash)

@@ -8,7 +8,11 @@ module HueExporter
 
     def initialize
       @config = HueExporter::Configuration.load
-      @client = HueExporter::HueClient.new(config)
+      @@client = @client = HueExporter::HueClient.new(config)
+    end
+
+    def self.client
+      @@client
     end
 
     def run
