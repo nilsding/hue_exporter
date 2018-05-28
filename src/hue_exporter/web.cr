@@ -24,7 +24,7 @@ module HueExporter
 end
 
 before_get do |context|
-  context.response.headers["Content-Type"] = "text/plain"
+  context.response.headers["Content-Type"] = "text/plain; charset=utf-8"
 end
 
 get "/" do |context|
