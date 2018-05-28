@@ -12,7 +12,7 @@ module HueExporter
       def extract_metrics(id, hash)
         metrics = [] of String
         metric_name_base = "hue_sensor_"
-        metric_labels = "{device_type=#{hash["type"].as_s.downcase}, name=#{hash["name"].as_s.inspect}}"
+        metric_labels = "{device_type=#{hash["type"].as_s.inspect},name=#{hash["name"].as_s.inspect}}"
 
         hash["state"].each do |key, value|
           next if key == "lastupdated"
