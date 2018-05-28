@@ -1,0 +1,13 @@
+name: hue_exporter
+version: 0.1.0
+
+authors:
+  - Georg Gadinger <nilsding@nilsding.org>
+
+targets:
+  hue_exporter:
+    main: src/hue_exporter.cr
+
+crystal: 0.24.2
+
+license: MIT
