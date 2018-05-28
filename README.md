@@ -1,6 +1,9 @@
 # hue\_exporter
 
-This is a simple Prometheus exporter for various metrics from a Philips Hue system.
+This is a simple Prometheus exporter for various metrics from a Philips Hue
+system.
+
+Right now it only exports metrics collected from sensor devices.
 
 This app does obviously not belong to Philips Lighting.
 
@@ -22,6 +25,33 @@ After building, just run it:
 ```
 ./bin/hue_exporter
 ```
+
+When starting `hue_exporter` for the first time, it will try to authenticate
+with the Hue bridge in your network.  After that is done you can safely start
+`hue_exporter` as a daemon using your system's init facilities.
+
+### Adding it to Prometheus
+
+Add the following lines to the Prometheus configuration:
+
+```yaml
+scrape_configs:
+  # [...] other configs may be here
+  
+  - job_name: 'hue_exporter'
+
+    scrape_interval: 1s
+    scrape_timeout: 1s
+
+    static_configs:
+      - targets: ['localhost:9369']
+```
+
+### Available metrics
+
+To see the metrics exported by `hue_exporter`, just open your favourite web
+browser and point it to `http://localhost:9369/metrics` (or wherever your
+`hue_exporter` application is running).
 
 ## Development
 
