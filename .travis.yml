@@ -1,1 +1,28 @@
 language: crystal
+
+env:
+  matrix:
+  - RUN=build
+  - RUN=spec
+  - RUN=lint
+
+script:
+  - |
+    case $RUN in
+    build)
+      echo "==> Building for release"
+      shards build --release
+      ;;
+    spec)
+      echo "==> Running specs"
+      crystal spec
+      ;;
+    lint)
+      echo "==> Running formatter"
+      crystal tool format --check src spec
+      ;;
+    *)
+      echo "unknown RUN: $RUN"
+      exit 1
+      ;;
+    esac
