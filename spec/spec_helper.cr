@@ -1,2 +1,4 @@
 require "spec"
-require "../src/hue_exporter"
+require "./support/*"
+
+require "../src/hue_exporter/*"

@@ -1,0 +1,334 @@
+{
+  "1": {
+    "state": {
+      "daylight": true,
+      "lastupdated": "2018-05-29T03:38:00"
+    },
+    "config": {
+      "on": true,
+      "configured": true,
+      "sunriseoffset": 30,
+      "sunsetoffset": -30
+    },
+    "name": "Daylight",
+    "type": "Daylight",
+    "modelid": "PHDL00",
+    "manufacturername": "Philips",
+    "swversion": "1.0"
+  },
+  "2": {
+    "state": {
+      "flag": false,
+      "lastupdated": "2018-05-29T04:30:00"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Wake up 1",
+    "type": "CLIPGenericFlag",
+    "modelid": "WAKEUP",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "L_04_XW6X4",
+    "recycle": true
+  },
+  "3": {
+    "state": {
+      "presence": true,
+      "lastupdated": "2018-05-29T15:32:19"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "HomeAway",
+    "type": "CLIPPresence",
+    "modelid": "HOMEAWAY",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "L_01_zXU40",
+    "recycle": false
+  },
+  "4": {
+    "state": {
+      "presence": true,
+      "lastupdated": "2018-05-29T15:32:19"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "FuchsPhone",
+    "type": "Geofence",
+    "modelid": "HA_GEOFENCE",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "L_02_CwxF2",
+    "recycle": false
+  },
+  "5": {
+    "state": {
+      "flag": false,
+      "lastupdated": "none"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Timer.companion",
+    "type": "CLIPGenericFlag",
+    "modelid": "PHA_CTRL_START",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "1UwW629VlcVN",
+    "recycle": true
+  },
+  "6": {
+    "state": {
+      "flag": false,
+      "lastupdated": "none"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Wake up 2",
+    "type": "CLIPGenericFlag",
+    "modelid": "WAKEUP",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "L_04_NTp0Z",
+    "recycle": true
+  },
+  "7": {
+    "state": {
+      "temperature": 2301,
+      "lastupdated": "2018-05-29T17:34:19"
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": null
+    },
+    "config": {
+      "on": true,
+      "battery": 100,
+      "reachable": true,
+      "alert": "none",
+      "ledindication": false,
+      "usertest": false,
+      "pending": []
+    },
+    "name": "Hue temperature sensor 1",
+    "type": "ZLLTemperature",
+    "modelid": "SML001",
+    "manufacturername": "Philips",
+    "productname": "Hue temperature sensor",
+    "swversion": "6.1.0.18912",
+    "uniqueid": "00:17:88:01:02:13:ed:5f-02-0402",
+    "capabilities": {
+      "certified": true
+    }
+  },
+  "8": {
+    "state": {
+      "presence": false,
+      "lastupdated": "2018-05-29T16:50:53"
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": null
+    },
+    "config": {
+      "on": true,
+      "battery": 100,
+      "reachable": true,
+      "alert": "none",
+      "ledindication": false,
+      "usertest": false,
+      "sensitivity": 2,
+      "sensitivitymax": 2,
+      "pending": []
+    },
+    "name": "Küche sensor",
+    "type": "ZLLPresence",
+    "modelid": "SML001",
+    "manufacturername": "Philips",
+    "productname": "Hue motion sensor",
+    "swversion": "6.1.0.18912",
+    "uniqueid": "00:17:88:01:02:13:ed:5f-02-0406",
+    "capabilities": {
+      "certified": true
+    }
+  },
+  "9": {
+    "state": {
+      "lightlevel": 10466,
+      "dark": true,
+      "daylight": false,
+      "lastupdated": "2018-05-29T17:35:49"
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": null
+    },
+    "config": {
+      "on": true,
+      "battery": 100,
+      "reachable": true,
+      "alert": "none",
+      "tholddark": 16000,
+      "tholdoffset": 7000,
+      "ledindication": false,
+      "usertest": false,
+      "pending": []
+    },
+    "name": "Hue ambient light sensor 1",
+    "type": "ZLLLightLevel",
+    "modelid": "SML001",
+    "manufacturername": "Philips",
+    "productname": "Hue ambient light sensor",
+    "swversion": "6.1.0.18912",
+    "uniqueid": "00:17:88:01:02:13:ed:5f-02-0400",
+    "capabilities": {
+      "certified": true
+    }
+  },
+  "10": {
+    "state": {
+      "status": 0,
+      "lastupdated": "2018-05-29T16:53:38"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "MotionSensor 8.Companion",
+    "type": "CLIPGenericStatus",
+    "modelid": "PHA_STATE",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "MotionSensor 8.Companion",
+    "recycle": true
+  },
+  "11": {
+    "state": {
+      "buttonevent": 4002,
+      "lastupdated": "2018-05-28T21:34:54"
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": null
+    },
+    "config": {
+      "on": true,
+      "battery": 100,
+      "reachable": true,
+      "pending": []
+    },
+    "name": "Wohnzimmer switch",
+    "type": "ZLLSwitch",
+    "modelid": "RWL021",
+    "manufacturername": "Philips",
+    "productname": "Hue dimmer switch",
+    "swversion": "5.45.1.17846",
+    "uniqueid": "00:17:88:01:03:e5:96:59-02-fc00",
+    "capabilities": {
+      "certified": true
+    }
+  },
+  "12": {
+    "state": {
+      "status": 0,
+      "lastupdated": "2018-05-28T21:34:54"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Dimmer Switch 11 SceneCycle",
+    "type": "CLIPGenericStatus",
+    "modelid": "PHWA01",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "WA0001",
+    "recycle": true
+  },
+  "13": {
+    "state": {
+      "buttonevent": 1002,
+      "lastupdated": "2018-05-29T04:26:10"
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": null
+    },
+    "config": {
+      "on": true,
+      "battery": 100,
+      "reachable": true,
+      "pending": []
+    },
+    "name": "Vorzimmer switch",
+    "type": "ZLLSwitch",
+    "modelid": "RWL021",
+    "manufacturername": "Philips",
+    "productname": "Hue dimmer switch",
+    "swversion": "5.45.1.17846",
+    "uniqueid": "00:17:88:01:03:e5:94:2c-02-fc00",
+    "capabilities": {
+      "certified": true
+    }
+  },
+  "14": {
+    "state": {
+      "status": 0,
+      "lastupdated": "2018-05-29T04:26:20"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Dimmer Switch 13 SceneCycle",
+    "type": "CLIPGenericStatus",
+    "modelid": "PHWA01",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "WA0001",
+    "recycle": true
+  },
+  "15": {
+    "state": {
+      "status": 0,
+      "lastupdated": "none"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Routine 1",
+    "type": "CLIPGenericStatus",
+    "modelid": "PHA_STATE",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "37ps0TTjfv50",
+    "recycle": true
+  },
+  "16": {
+    "state": {
+      "flag": false,
+      "lastupdated": "none"
+    },
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "name": "Routine 2",
+    "type": "CLIPGenericFlag",
+    "modelid": "PHA_CTRL_START",
+    "manufacturername": "Philips",
+    "swversion": "1.0",
+    "uniqueid": "lTsIk7dNb7eg",
+    "recycle": true
+  }
+}
