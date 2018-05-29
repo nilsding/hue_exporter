@@ -21,6 +21,16 @@ module HueExporter
       return {true, response}
     end
 
+    def lights
+      response = JSON.parse(get("/api/#{config.username}/lights").body)
+
+      if (first_hash = response.first.as_h?) && first_hash["error"]?
+        return {false, response.first["error"]["type"].as_i}
+      end
+
+      return {true, response}
+    end
+
     # Authorize with the Hue bridge
     def authorize
       return {true, :already_authorized} unless config.username == UNSET_STRING

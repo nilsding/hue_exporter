@@ -2,7 +2,7 @@ require "./metric"
 
 module HueExporter
   module Metrics
-    class Sensor < Metric
+    class Light < Metric
       def extract(response)
         metrics = [] of String
         response.each do |id, hash|
@@ -13,7 +13,7 @@ module HueExporter
 
       def extract_metrics(id, hash)
         metrics = [] of String
-        metric_name_base = "hue_sensor_"
+        metric_name_base = "hue_light_"
         metric_labels = "{device_type=#{hash["type"].as_s.inspect},name=#{hash["name"].as_s.inspect}}"
 
         metrics += hash["state"].as_h.compact_map do |key, value|

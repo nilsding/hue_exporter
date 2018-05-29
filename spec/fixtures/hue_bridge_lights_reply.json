@@ -1,0 +1,272 @@
+{
+  "1": {
+    "state": {
+      "on": true,
+      "bri": 254,
+      "hue": 42413,
+      "sat": 84,
+      "effect": "none",
+      "xy": [0.3065, 0.3150],
+      "ct": 153,
+      "alert": "none",
+      "colormode": "xy",
+      "mode": "homeautomation",
+      "reachable": true
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": "2017-11-29T20:48:24"
+    },
+    "type": "Extended color light",
+    "name": "Schlafzimmer Licht",
+    "modelid": "LCT010",
+    "manufacturername": "Philips",
+    "productname": "Hue color lamp",
+    "capabilities": {
+      "certified": true,
+      "control": {
+        "mindimlevel": 1000,
+        "maxlumen": 806,
+        "colorgamuttype": "C",
+        "colorgamut": [
+          [0.6915, 0.3083],
+          [0.1700, 0.7000],
+          [0.1532, 0.0475]
+        ],
+        "ct": {
+          "min": 153,
+          "max": 500
+        }
+      },
+      "streaming": {
+        "renderer": true,
+        "proxy": true
+      }
+    },
+    "config": {
+      "archetype": "sultanbulb",
+      "function": "mixed",
+      "direction": "omnidirectional"
+    },
+    "uniqueid": "00:17:88:01:02:82:9e:a6-0b",
+    "swversion": "1.29.0_r21169",
+    "swconfigid": "6A139B19",
+    "productid": "Philips-LCT010-1-A19ECLv4"
+  },
+  "2": {
+    "state": {
+      "on": true,
+      "bri": 144,
+      "hue": 7676,
+      "sat": 199,
+      "effect": "none",
+      "xy": [0.5016, 0.4151],
+      "ct": 443,
+      "alert": "none",
+      "colormode": "xy",
+      "mode": "homeautomation",
+      "reachable": true
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": "2017-11-29T20:48:26"
+    },
+    "type": "Extended color light",
+    "name": "Wohnzimmer Licht",
+    "modelid": "LCT010",
+    "manufacturername": "Philips",
+    "productname": "Hue color lamp",
+    "capabilities": {
+      "certified": true,
+      "control": {
+        "mindimlevel": 1000,
+        "maxlumen": 806,
+        "colorgamuttype": "C",
+        "colorgamut": [
+          [0.6915, 0.3083],
+          [0.1700, 0.7000],
+          [0.1532, 0.0475]
+        ],
+        "ct": {
+          "min": 153,
+          "max": 500
+        }
+      },
+      "streaming": {
+        "renderer": true,
+        "proxy": true
+      }
+    },
+    "config": {
+      "archetype": "sultanbulb",
+      "function": "mixed",
+      "direction": "omnidirectional"
+    },
+    "uniqueid": "00:17:88:01:02:88:72:08-0b",
+    "swversion": "1.29.0_r21169",
+    "swconfigid": "6A139B19",
+    "productid": "Philips-LCT010-1-A19ECLv4"
+  },
+  "3": {
+    "state": {
+      "on": false,
+      "bri": 126,
+      "hue": 8402,
+      "sat": 140,
+      "effect": "none",
+      "xy": [0.4575, 0.4099],
+      "ct": 366,
+      "alert": "none",
+      "colormode": "xy",
+      "mode": "homeautomation",
+      "reachable": true
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": "2017-11-29T20:48:29"
+    },
+    "type": "Extended color light",
+    "name": "Küche Licht",
+    "modelid": "LCT010",
+    "manufacturername": "Philips",
+    "productname": "Hue color lamp",
+    "capabilities": {
+      "certified": true,
+      "control": {
+        "mindimlevel": 1000,
+        "maxlumen": 806,
+        "colorgamuttype": "C",
+        "colorgamut": [
+          [0.6915, 0.3083],
+          [0.1700, 0.7000],
+          [0.1532, 0.0475]
+        ],
+        "ct": {
+          "min": 153,
+          "max": 500
+        }
+      },
+      "streaming": {
+        "renderer": true,
+        "proxy": true
+      }
+    },
+    "config": {
+      "archetype": "sultanbulb",
+      "function": "mixed",
+      "direction": "omnidirectional"
+    },
+    "uniqueid": "00:17:88:01:02:88:69:bf-0b",
+    "swversion": "1.29.0_r21169",
+    "swconfigid": "6A139B19",
+    "productid": "Philips-LCT010-1-A19ECLv4"
+  },
+  "4": {
+    "state": {
+      "on": false,
+      "bri": 254,
+      "hue": 8402,
+      "sat": 140,
+      "effect": "none",
+      "xy": [0.4575, 0.4099],
+      "ct": 366,
+      "alert": "none",
+      "colormode": "xy",
+      "mode": "homeautomation",
+      "reachable": true
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": "2017-11-29T20:48:19"
+    },
+    "type": "Extended color light",
+    "name": "Vorzimmer Türe",
+    "modelid": "LCT015",
+    "manufacturername": "Philips",
+    "productname": "Hue color lamp",
+    "capabilities": {
+      "certified": true,
+      "control": {
+        "mindimlevel": 1000,
+        "maxlumen": 806,
+        "colorgamuttype": "C",
+        "colorgamut": [
+          [0.6915, 0.3083],
+          [0.1700, 0.7000],
+          [0.1532, 0.0475]
+        ],
+        "ct": {
+          "min": 153,
+          "max": 500
+        }
+      },
+      "streaming": {
+        "renderer": true,
+        "proxy": true
+      }
+    },
+    "config": {
+      "archetype": "sultanbulb",
+      "function": "mixed",
+      "direction": "omnidirectional"
+    },
+    "uniqueid": "00:17:88:01:03:d9:7b:34-0b",
+    "swversion": "1.29.0_r21169",
+    "swconfigid": "3416C2DD",
+    "productid": "Philips-LCT015-1-A19ECLv5"
+  },
+  "5": {
+    "state": {
+      "on": false,
+      "bri": 254,
+      "hue": 8402,
+      "sat": 140,
+      "effect": "none",
+      "xy": [0.4575, 0.4099],
+      "ct": 366,
+      "alert": "none",
+      "colormode": "xy",
+      "mode": "homeautomation",
+      "reachable": true
+    },
+    "swupdate": {
+      "state": "noupdates",
+      "lastinstall": "2017-11-29T20:48:31"
+    },
+    "type": "Extended color light",
+    "name": "Vorzimmer Bad",
+    "modelid": "LCT015",
+    "manufacturername": "Philips",
+    "productname": "Hue color lamp",
+    "capabilities": {
+      "certified": true,
+      "control": {
+        "mindimlevel": 1000,
+        "maxlumen": 806,
+        "colorgamuttype": "C",
+        "colorgamut": [
+          [0.6915, 0.3083],
+          [0.1700, 0.7000],
+          [0.1532, 0.0475]
+        ],
+        "ct": {
+          "min": 153,
+          "max": 500
+        }
+      },
+      "streaming": {
+        "renderer": true,
+        "proxy": true
+      }
+    },
+    "config": {
+      "archetype": "sultanbulb",
+      "function": "mixed",
+      "direction": "omnidirectional"
+    },
+    "uniqueid": "00:17:88:01:03:dd:dc:06-0b",
+    "swversion": "1.29.0_r21169",
+    "swconfigid": "3416C2DD",
+    "productid": "Philips-LCT015-1-A19ECLv5"
+  }
+}

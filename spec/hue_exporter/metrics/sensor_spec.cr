@@ -7,7 +7,7 @@ describe HueExporter::Metrics::Sensor do
 
   describe "#extract" do
     instance = HueExporter::Metrics::Sensor.new
-    sensors_reply = Fixtures.load_json("hue_bridge_sensors_reply.json")
+    sensors_reply = Fixtures.load_json("hue_bridge_sensors_reply")
 
     it "returns the expected metrics" do
       expected_metrics = Fixtures.load_string_array("sensors_metrics.txt")
