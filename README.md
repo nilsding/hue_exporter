@@ -1,5 +1,7 @@
 # hue\_exporter
 
+[![Build Status](https://travis-ci.com/nilsding/hue_exporter.svg?branch=master)](https://travis-ci.com/nilsding/hue_exporter)
+
 This is a simple Prometheus exporter for various metrics from a Philips Hue
 system.
 
