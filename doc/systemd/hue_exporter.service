@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus exporter for a Philips Hue system
+After=network.target
+
+[Service]
+ExecStart=/home/nilsding/hue_exporter/bin/hue_exporter
+Environment=HOME=/home/nilsding
+Type=simple
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
