@@ -5,7 +5,7 @@
 This is a simple Prometheus exporter for various metrics from a Philips Hue
 system.
 
-Right now it only exports metrics collected from sensor devices.
+Right now it only exports metrics collected from sensor devices and lights.
 
 This app does obviously not belong to Philips Lighting.
 
