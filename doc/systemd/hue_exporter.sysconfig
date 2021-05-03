@@ -1,0 +1,17 @@
+# Configuration file for hue_exporter
+
+# Replace `sometoken` with the token you received from the Hue bridge.
+# You can receive a token by running the hue_exporter binary without setting
+# this environment variable.
+HUE_TOKEN=sometoken
+
+# Uncomment this if you want to connect to the Hue bridge in a different way.
+# Default: http://philips-hue.local
+#HUE_BRIDGE_URL=http://192.168.1.24
+
+# Uncomment this if you want to bind the exporter to a different address.
+# Default: 127.0.0.1:9369
+#BIND_ADDR=10.210.57.11:9369
+
+# Uncomment this if you want to get some more insights about what's going on...
+#RUST_LOG=info

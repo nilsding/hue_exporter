@@ -1,7 +1,5 @@
 # hue\_exporter
 
-[![Build Status](https://travis-ci.com/nilsding/hue_exporter.svg?branch=master)](https://travis-ci.com/nilsding/hue_exporter)
-
 This is a simple Prometheus exporter for various metrics from a Philips Hue
 system.
 
@@ -12,12 +10,12 @@ This app does obviously not belong to Philips Lighting.
 ## Installation
 
 Build requirements:
-- Crystal 0.24.2
+- Rust
 
 Build it:
 
 ```
-shards build
+cargo build --release
 ```
 
 ## Usage
@@ -25,12 +23,24 @@ shards build
 After building, just run it:
 
 ```
-./bin/hue_exporter
+./target/release/hue_exporter
 ```
 
-When starting `hue_exporter` for the first time, it will try to authenticate
-with the Hue bridge in your network.  After that is done you can safely start
-`hue_exporter` as a daemon using your system's init facilities.
+When starting `hue_exporter` without a `HUE_TOKEN` set, it will try to
+authenticate with the Hue bridge in your network.  After that is done you can
+export the received token using the `HUE_TOKEN` environment variable and start
+`hue_exporter` as a [daemon using e.g. systemd][systemd_doc].
+
+### Configuration
+
+Configuration is done via the following environment variables:
+
+- `HUE_TOKEN`: set this to the token received from authorizing with the Hue
+  bridge.  If unset the authorisation flow will start.
+- `HUE_BRIDGE_URL`: set this to the URL of the Hue bridge.
+  Default value: `http://hue-bridge.local`
+- `BIND_ADDR`: set this to the address+port to bind to.
+  Default value: `127.0.0.1:9369`
 
 ### Adding it to Prometheus
 
@@ -70,3 +80,5 @@ TODO: Write development instructions here
 ## Contributors
 
 - [nilsding](https://github.com/nilsding) Georg Gadinger - creator, maintainer
+
+[systemd_doc]: ./doc/systemd/README.md

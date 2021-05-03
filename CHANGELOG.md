@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Metrics for lights
 
+### Changed
+- Rewrote it in Rust
+- Configuration is now done via the following env variables:
+  - `HUE_TOKEN`: set this to the token received from authorizing with the Hue bridge
+  - `HUE_BRIDGE_URL`: set this to the URL of the Hue bridge.  Default value: `http://hue-bridge.local`
+  - `BIND_ADDR`: set this to the address+port to bind to.  Default value: `127.0.0.1:9369`
+
 ## [0.1.0] - 2018-05-28
 
 ### Added
