@@ -1,5 +1,9 @@
 use actix_web::{
-    get, http::header, middleware::Logger, web, App, HttpResponse, HttpServer, Responder,
+    get,
+    http::header,
+    middleware::Logger,
+    web::{self, Data},
+    App, HttpResponse, HttpServer, Responder,
 };
 use anyhow::Result;
 use lazy_static::lazy_static;
@@ -257,7 +261,7 @@ fn main() -> Result<()> {
         let server = HttpServer::new(move || {
             App::new()
                 .wrap(Logger::default())
-                .data(hue_client.clone())
+                .app_data(Data::new(hue_client.clone()))
                 .service(index)
                 .service(metrics)
         })
