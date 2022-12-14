@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.0] - 2022-12-14
+
+### Changed
+- Light states `bri`, `hue`, `sat`, and `ct` are now optional as not all lights emit these properties (@martinlindhe)
+- `/metrics` now sets the utf-8 charset in the response header (@martinlindhe)
+
+## [0.2.0] - 2021-05-03
+
 ### Added
 - Metrics for lights
 

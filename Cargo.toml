@@ -4,7 +4,7 @@ edition = "2018"
 homepage = "https://github.com/nilsding/hue_exporter"
 name = "hue_exporter"
 rust-version = "1.59"
-version = "0.2.0"
+version = "0.3.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
