@@ -106,7 +106,9 @@ async fn metrics(hue_client: web::Data<HueClient>) -> impl Responder {
     let metric_families = prometheus::gather();
     encoder.encode(&metric_families, &mut buffer).unwrap();
 
-    HttpResponse::Ok().body(String::from_utf8(buffer).unwrap())
+    HttpResponse::Ok()
+        .insert_header((header::CONTENT_TYPE, "text/plain; charset=utf-8"))
+        .body(String::from_utf8(buffer).unwrap())
 }
 
 async fn fetch_metrics(hue_client: &HueClient) -> Result<()> {
@@ -213,10 +215,10 @@ async fn fetch_metrics(hue_client: &HueClient) -> Result<()> {
         // state metrics -------------------------------------------------
         report_metric!(light, GAUGE_LIGHTS_STATE_REACHABLE, light.state.reachable);
         report_metric!(light, GAUGE_LIGHTS_STATE_ON, light.state.on);
-        report_metric!(light, GAUGE_LIGHTS_STATE_BRI, light.state.bri);
-        report_metric!(light, GAUGE_LIGHTS_STATE_HUE, light.state.hue);
-        report_metric!(light, GAUGE_LIGHTS_STATE_SAT, light.state.sat);
-        report_metric!(light, GAUGE_LIGHTS_STATE_CT, light.state.ct);
+        report_optional_metric!(light, GAUGE_LIGHTS_STATE_BRI, light.state.bri);
+        report_optional_metric!(light, GAUGE_LIGHTS_STATE_HUE, light.state.hue);
+        report_optional_metric!(light, GAUGE_LIGHTS_STATE_SAT, light.state.sat);
+        report_optional_metric!(light, GAUGE_LIGHTS_STATE_CT, light.state.ct);
     }
 
     Ok(())

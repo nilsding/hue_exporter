@@ -52,10 +52,10 @@ pub struct Light {
 pub struct LightState {
     pub reachable: bool,
     pub on: bool,
-    pub bri: i64,
-    pub hue: i64,
-    pub sat: i64,
-    pub ct: i64,
+    pub bri: Option<i64>,
+    pub hue: Option<i64>,
+    pub sat: Option<i64>,
+    pub ct: Option<i64>,
 }
 
 #[derive(Debug, Deserialize)]
